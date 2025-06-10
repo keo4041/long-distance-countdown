@@ -10,7 +10,7 @@ import Celebration from './components/Celebration';
 import FlightTracker from './components/FlightTracker';
 import FloatingEmojis from './components/FloatingEmojis'; // <--- 1. IMPORT IT
 
-import couplePhoto from './MyLove.png';
+import couplePhoto from './E&D.jpg';
 
 const meetingDate = new Date('2025-06-18T12:00:00Z');
 
