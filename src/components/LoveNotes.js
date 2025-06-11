@@ -44,7 +44,7 @@ const LoveNotes = () => {
     }, []);
 
     return (
-        <div className="h-16 flex items-center justify-center md:justify-start">
+        <div className="h-16 flex items-center justify-center mt-2 mb-4 md:text-center">
             <AnimatePresence mode="wait">
                 <motion.p
                     key={index}
@@ -52,7 +52,7 @@ const LoveNotes = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.5 }}
-                    className="text-slate-400 text-center md:text-left"
+                    className="text-slate-400 text-center mt-2 mb-4 md:text-center"
                 >
                     {notes[index]}
                 </motion.p>

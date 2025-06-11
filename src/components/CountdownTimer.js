@@ -5,7 +5,7 @@ import FlightTracker from './FlightTracker';
 // Import your photo here
 import couplePhoto from '../MyLove.png'; 
 
-  const meetingDate = new Date('2025-06-18T12:00:00Z');
+  const meetingDate = new Date('2025-06-18T12:30:00Z');
 
 const CountdownTimer = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
@@ -14,11 +14,23 @@ const CountdownTimer = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
+        console.log(
+            "Time left:",
+            timeLeft
+        );
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
-    if (new Date() > new Date('2025-06-18T10:00:00Z')) {
+    if (new Date() > new Date('2025-06-09T00:00:01Z')) {
+        console.log(
+            "It's flight time!"
+        );
       setIsFlightTime(true);
+    } else {
+        console.log(
+            "It's not flight time yet."
+        );
+        
     }
 
     return () => clearTimeout(timer);

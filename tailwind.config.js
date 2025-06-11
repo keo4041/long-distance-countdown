@@ -10,6 +10,15 @@ module.exports = {
       colors: {
         'rose-gold': '#B76E79',
         'twilight': '#1E293B', // A deep blue-gray
+      },
+      keyframes: {
+        'pulse-glow': {
+          '0%, 100%': { transform: 'scale(1)', opacity: '0.5' },
+          '50%': { transform: 'scale(1.05)', opacity: '0.7' },
+        }
+      },
+      animation: {
+        'pulse-glow': 'pulse-glow 4s ease-in-out infinite',
       }
     },
   },
